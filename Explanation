@@ -3,3 +3,4 @@ Nandhu Krishna 211102054
 I have written the code in C as I am familiar with the language because I have used it while learning Data Structures.
 In Kruskal's algorithm, the idea is to sort the edges in ascending order by their weight and pick them up in order and include them in the MST of explored nodes/edges if they do not already form a cycle with any explored nodes. This is done using the Union-Find data structure. But detection of cycles for directed graphs fails with this method.
 Prim’s algorithm assumes that all vertices are connected. But in a directed graph, every node is not reachable from every other node. So, Prim’s algorithm fails due to this reason.
+Since Dijkstra follows a Greedy Approach, once a node is marked as visited it cannot be reconsidered even if there is another path with less cost or distance. This issue arises only if there exists a negative weight or edge in the graph.
